@@ -1,21 +1,10 @@
-
-
+<script setup lang="ts">
+import QuestionForm from './QuestionForm.vue';
+import AskButton from './AskButton.vue';
+</script>
 <template>
   <div>
-    <QuestionFormVue text="question" @change="onTextChange"/>
-    <AskButton/>
+    <QuestionForm :text="`hello`"></QuestionForm>
+    <AskButton></AskButton>
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref } from 'vue';
-import AskButton from './AskButton.vue';
-import type QuestionFormVue from './QuestionForm.vue';
-
-const question = ref('')
-
-function onTextChange(event: Event){
-  console.log(event)
-  question.value = event.target!.value
-}
-</script>
