@@ -2,10 +2,12 @@
   <div class="about">
     <h1>This is an about page</h1>
     <CounterButton></CounterButton>
+    <OraclePageView></OraclePageView>
   </div>
 </template>
 <script lang="ts" setup>
 import CounterButton from '@/components/CounterButton.vue';
+import OraclePageView from '@/components/OraclePageView.vue';
 </script>
 
 <style>

@@ -1,12 +1,12 @@
 <template>
   <input 
   type="text" 
-  value="text" 
-  @change="$emit('change', $event)"
+  :value="value" 
+  @input="$emit('input', $event)"
   />
 </template>
 
 <script setup lang="ts">
 import { defineProps } from 'vue';
-defineProps<{text: string}>()
+defineProps<{value: string}>()
 </script>
