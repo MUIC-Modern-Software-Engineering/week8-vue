@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AskButton from './AskButton.vue';
-import { ref } from 'vue';
+import AskButton from './AskButton.vue'
+import { ref } from 'vue'
 
 const question = ref('')
 
@@ -10,7 +10,8 @@ function ask() {
 </script>
 <template>
   <div>
-    <input type="test" v-model="question"/>
+    <input type="test" v-model="question" />
     <AskButton @click="ask"></AskButton>
   </div>
-</template> :value=
+</template>
+:value=

@@ -1,8 +1,8 @@
 // Button.stories.ts
 
-import BetterOracle from './BetterOracleView.vue';
+import BetterOracle from './BetterOracleView.vue'
 
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3'
 
 const meta: Meta<typeof BetterOracle> = {
   /* 👇 The title prop is optional.
@@ -14,14 +14,14 @@ const meta: Meta<typeof BetterOracle> = {
   render: (args) => ({
     components: { BetterOracle },
     setup() {
-      return { args };
+      return { args }
     },
-    template: '<BetterOracle v-bind="args" />',
+    template: '<BetterOracle v-bind="args" />'
   })
-};
+}
 
-export default meta;
-type Story = StoryObj<typeof BetterOracle>;
+export default meta
+type Story = StoryObj<typeof BetterOracle>
 
 /*
  *👇 Render functions are a framework specific feature to allow you control on how the component renders.
@@ -36,16 +36,16 @@ const defaultArgs = {
 export const Primary: Story = {
   args: {
     ...defaultArgs
-  },
-};
+  }
+}
 
 export const Secondary: Story = {
   args: {
     ...defaultArgs,
-    answer:{
+    answer: {
       answer: 'yes',
       forced: false,
       image: 'hello.jpg'
     }
-  },
-};
+  }
+}

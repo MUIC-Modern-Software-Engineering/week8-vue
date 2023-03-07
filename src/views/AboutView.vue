@@ -6,8 +6,8 @@
   </div>
 </template>
 <script lang="ts" setup>
-import CounterButton from '@/components/CounterButton.vue';
-import OraclePageView from '@/components/OraclePageView.vue';
+import CounterButton from '@/components/CounterButton.vue'
+import OraclePageView from '@/components/OraclePageView.vue'
 </script>
 
 <style>

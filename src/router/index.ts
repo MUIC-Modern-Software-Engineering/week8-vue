@@ -18,9 +18,9 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/sphaghetti-oracle',
-      name: 'sphaghetti-oracle',
-      component: () => import('../components/spaghetti/SphaghettiOracle.vue')
+      path: '/spaghetti-oracle',
+      name: 'spaghetti-oracle',
+      component: () => import('../components/spaghetti/SpaghettiOracle.vue')
     },
     {
       path: '/better-oracle',

@@ -1,6 +1,6 @@
-import CounterButton from './CounterButton.vue';
+import CounterButton from './CounterButton.vue'
 
-import type { Meta, StoryFn } from '@storybook/vue3';
+import type { Meta, StoryFn } from '@storybook/vue3'
 
 export default {
   /* 👇 The title prop is optional.
@@ -8,10 +8,10 @@ export default {
    * to learn how to generate automatic titles
    */
   title: 'Button/CounterButton',
-  component: CounterButton,
-} as Meta<typeof CounterButton>;
+  component: CounterButton
+} as Meta<typeof CounterButton>
 
 export const Primary: StoryFn<typeof CounterButton> = () => ({
   components: { CounterButton },
-  template: '<CounterButton/>',
-});
+  template: '<CounterButton/>'
+})

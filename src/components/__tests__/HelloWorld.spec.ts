@@ -20,9 +20,8 @@ describe('CounterButton', () => {
   it('increases the number when we click', async () => {
     const wrapper = mount(CounterButton)
     await wrapper.find('button').trigger('click')
-    expect(wrapper.text()).toContain("1")
+    expect(wrapper.text()).toContain('1')
   })
-
 
   it('increases the number data when we click', async () => {
     const wrapper = mount(CounterButton)
