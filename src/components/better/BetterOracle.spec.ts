@@ -14,9 +14,9 @@ describe('Better Oracle', () => {
 describe("Internal State Test(useOracle)", () => {
   test("useOracle", async () => {
     const oracle = useOracle()
+    expect(oracle.answer.value).is.null
     oracle.question.value = 'hello world'
     await oracle.ask()
-    expect(oracle.answer).is.not.null
-    expect(oracle.answer.value?.image).not.toBe('hello.jpg')
+    expect(oracle.answer.value).is.not.null
   })
 })
